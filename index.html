@@ -35,69 +35,69 @@ footer{background:#101828;color:#d0d5dd;padding:35px 0;margin-top:20px}footer a{
 <body>
 <header><div class="wrap nav">
 <a class="brand" href="#">EarnMate <span>India</span></a>
-<nav><a href="#opportunities">Opportunities</a><a href="#finder">Finder</a><a href="#calculator">Calculator</a><a href="#safety">Scam Check</a></nav>
+<nav><a href="#opportunities" data-i18n="navOpp">Opportunities</a><a href="#finder" data-i18n="navFinder">Finder</a><a href="#calculator" data-i18n="navCalc">Calculator</a><a href="#safety" data-i18n="navScam">Scam Check</a></nav>
 <select class="lang" id="lang" aria-label="Language"><option value="en">English</option><option value="te">తెలుగు</option><option value="hi">हिन्दी</option></select>
 </div></header>
 
 <main>
 <section class="hero"><div class="wrap">
-<div class="tag">PUBLIC RESOURCE • INDIA</div>
+<div class="tag" data-i18n="publicResource">PUBLIC RESOURCE • INDIA</div>
 <h1 id="heroTitle">Find legitimate ways to earn online.</h1>
 <p id="heroText">Compare jobs, learning paths, freelancing and creator opportunities. EarnMate focuses on official sources and practical starting steps — not unrealistic income promises.</p>
-<div class="heroBtns"><a class="btn primary" href="#finder">Find My Earning Path</a><a class="btn secondary" href="#opportunities">Browse Opportunities</a></div>
-<div class="trust"><span>✓ Official-source links</span><span>✓ No guaranteed-income claims</span><span>✓ Free to use</span><span>✓ Mobile friendly</span></div>
+<div class="heroBtns"><a class="btn primary" href="#finder" data-i18n="findPathBtn">Find My Earning Path</a><a class="btn secondary" href="#opportunities" data-i18n="browseBtn">Browse Opportunities</a></div>
+<div class="trust"><span data-i18n="trust1">✓ Official-source links</span><span data-i18n="trust2">✓ No guaranteed-income claims</span><span data-i18n="trust3">✓ Free to use</span><span data-i18n="trust4">✓ Mobile friendly</span></div>
 </div></section>
 
-<section id="finder"><div class="wrap"><div class="sectionHead"><div><h2>Find your starting path</h2><div class="muted">Answer four simple questions.</div></div></div>
+<section id="finder"><div class="wrap"><div class="sectionHead"><div><h2 data-i18n="finderTitle">Find your starting path</h2><div class="muted" data-i18n="finderSub">Answer four simple questions.</div></div></div>
 <div class="panel">
 <div class="finder">
-<label>Device<select id="fDevice"><option value="any">Any</option><option value="phone">Phone only</option><option value="laptop">Laptop / PC</option></select></label>
-<label>Time per day<select id="fTime"><option value="any">Any</option><option value="1">Up to 1 hour</option><option value="2">1–3 hours</option><option value="4">3+ hours</option></select></label>
-<label>Experience<select id="fSkill"><option value="any">Any</option><option value="beginner">Beginner</option><option value="basic">Basic skills</option><option value="skilled">Skilled</option></select></label>
-<label>Budget<select id="fBudget"><option value="0">₹0</option><option value="500">Up to ₹500</option><option value="2000">Up to ₹2,000</option></select></label>
-</div><button class="btn primary" style="margin-top:15px" onclick="findPath()">Show suitable paths</button>
+<label><span data-i18n="deviceLabel">Device</span><select id="fDevice"><option value="any" data-i18n="any">Any</option><option value="phone" data-i18n="phoneOnly">Phone only</option><option value="laptop" data-i18n="laptopPC">Laptop / PC</option></select></label>
+<label><span data-i18n="timeLabel">Time per day</span><select id="fTime"><option value="any" data-i18n="any">Any</option><option value="1" data-i18n="up1">Up to 1 hour</option><option value="2" data-i18n="one3">1–3 hours</option><option value="4" data-i18n="threePlus">3+ hours</option></select></label>
+<label><span data-i18n="experienceLabel">Experience</span><select id="fSkill"><option value="any" data-i18n="any">Any</option><option value="beginner" data-i18n="beginner">Beginner</option><option value="basic" data-i18n="basicSkills">Basic skills</option><option value="skilled" data-i18n="skilled">Skilled</option></select></label>
+<label><span data-i18n="budgetLabel">Budget</span><select id="fBudget"><option value="0">₹0</option><option value="500" data-i18n="up500">Up to ₹500</option><option value="2000" data-i18n="up2000">Up to ₹2,000</option></select></label>
+</div><button class="btn primary" style="margin-top:15px" onclick="findPath()" data-i18n="showPaths">Show suitable paths</button>
 <div id="finderResult" class="result"></div>
 </div></div></section>
 
 <section id="opportunities"><div class="wrap">
-<div class="sectionHead"><div><h2>Opportunity directory</h2><div class="muted">Start from the official source. Always verify current terms.</div></div><strong id="count"></strong></div>
-<div class="controls"><input id="search" placeholder="Search jobs, courses, freelancing…" oninput="render()"><select id="type" onchange="render()"><option value="all">All categories</option><option value="job">Jobs</option><option value="learn">Learn</option><option value="creator">Creator</option><option value="freelance">Freelance</option></select><select id="device" onchange="render()"><option value="all">All devices</option><option value="phone">Phone</option><option value="laptop">Laptop</option><option value="both">Both</option></select><select id="cost" onchange="render()"><option value="all">Any cost</option><option value="free">₹0 / free to start</option><option value="paid">May involve fees</option></select></div>
+<div class="sectionHead"><div><h2 data-i18n="oppTitle">Opportunity directory</h2><div class="muted" data-i18n="oppSub">Start from the official source. Always verify current terms.</div></div><strong id="count"></strong></div>
+<div class="controls"><input id="search" placeholder="Search jobs, courses, freelancing…" oninput="render()"><select id="type" onchange="render()"><option value="all" data-i18n="allCategories">All categories</option><option value="job" data-i18n="jobs">Jobs</option><option value="learn" data-i18n="learn">Learn</option><option value="creator" data-i18n="creator">Creator</option><option value="freelance" data-i18n="freelance">Freelance</option></select><select id="device" onchange="render()"><option value="all" data-i18n="allDevices">All devices</option><option value="phone" data-i18n="phone">Phone</option><option value="laptop" data-i18n="laptop">Laptop</option><option value="both" data-i18n="both">Both</option></select><select id="cost" onchange="render()"><option value="all" data-i18n="anyCost">Any cost</option><option value="free" data-i18n="freeStart">₹0 / free to start</option><option value="paid" data-i18n="mayFees">May involve fees</option></select></div>
 <div id="cards" class="grid"></div>
 </div></section>
 
-<section id="calculator"><div class="wrap"><div class="sectionHead"><div><h2>Income planning calculator</h2><div class="muted">Planning tool only — actual earnings vary.</div></div></div>
+<section id="calculator"><div class="wrap"><div class="sectionHead"><div><h2 data-i18n="calcTitle">Income planning calculator</h2><div class="muted" data-i18n="calcSub">Planning tool only — actual earnings vary.</div></div></div>
 <div class="panel calc">
-<label>Hours per day<input type="number" id="hours" value="2" min="0" step=".5" oninput="calc()"></label>
-<label>Days per month<input type="number" id="days" value="25" min="1" max="31" oninput="calc()"></label>
-<label>Example hourly rate (₹)<input type="number" id="rate" value="150" min="0" oninput="calc()"></label>
-<div><div class="muted">Illustrative monthly gross</div><div class="bigNumber" id="total">₹7,500</div><div class="muted">This is not an earnings guarantee.</div></div>
+<label><span data-i18n="hoursDay">Hours per day</span><input type="number" id="hours" value="2" min="0" step=".5" oninput="calc()"></label>
+<label><span data-i18n="daysMonth">Days per month</span><input type="number" id="days" value="25" min="1" max="31" oninput="calc()"></label>
+<label><span data-i18n="hourlyRate">Example hourly rate (₹)</span><input type="number" id="rate" value="150" min="0" oninput="calc()"></label>
+<div><div class="muted" data-i18n="monthlyGross">Illustrative monthly gross</div><div class="bigNumber" id="total">₹7,500</div><div class="muted" data-i18n="noGuarantee">This is not an earnings guarantee.</div></div>
 </div></div></section>
 
 <section id="safety"><div class="wrap"><div class="two">
-<div class="panel"><h2>Scam check</h2><p class="muted">Before paying money or sharing documents, check these warning signs.</p>
+<div class="panel"><h2 data-i18n="scamTitle">Scam check</h2><p class="muted" data-i18n="scamSub">Before paying money or sharing documents, check these warning signs.</p>
 <div class="checklist">
-<label class="check"><input type="checkbox"> They promise guaranteed or unusually high income.</label>
-<label class="check"><input type="checkbox"> They demand an upfront “job fee” or deposit.</label>
-<label class="check"><input type="checkbox"> They pressure you to act immediately.</label>
-<label class="check"><input type="checkbox"> They ask for OTP, PIN, password or remote access.</label>
-<label class="check"><input type="checkbox"> You cannot verify the employer/platform independently.</label>
+<label class="check"><input type="checkbox"><span data-i18n="scam1">They promise guaranteed or unusually high income.</span></label>
+<label class="check"><input type="checkbox"><span data-i18n="scam2">They demand an upfront “job fee” or deposit.</span></label>
+<label class="check"><input type="checkbox"><span data-i18n="scam3">They pressure you to act immediately.</span></label>
+<label class="check"><input type="checkbox"><span data-i18n="scam4">They ask for OTP, PIN, password or remote access.</span></label>
+<label class="check"><input type="checkbox"><span data-i18n="scam5">You cannot verify the employer/platform independently.</span></label>
 </div></div>
-<div class="panel"><h2>EarnMate rule</h2><div class="notice"><b>Never treat an EarnMate listing as a guarantee.</b><br><br>We provide discovery and educational information. Use the official website of the platform or employer to verify eligibility, fees, vacancies, payment rules and current terms before starting.</div></div>
+<div class="panel"><h2 data-i18n="ruleTitle">EarnMate rule</h2><div class="notice"><b data-i18n="ruleBold">Never treat an EarnMate listing as a guarantee.</b><br><br><span data-i18n="ruleText">We provide discovery and educational information. Use the official website of the platform or employer to verify eligibility, fees, vacancies, payment rules and current terms before starting.</span></div></div>
 </div></div></section>
 
-<section><div class="wrap"><div class="panel"><h2>How EarnMate works</h2><div class="two">
-<div><h3>1. Discover</h3><p class="muted">Filter opportunities by category, device and cost.</p></div>
-<div><h3>2. Verify</h3><p class="muted">Open the official source and confirm current details.</p></div>
-<div><h3>3. Prepare</h3><p class="muted">Build the skills, profile, portfolio or documents required.</p></div>
-<div><h3>4. Start</h3><p class="muted">Apply or enroll through the official platform. Never pay a stranger.</p></div>
+<section><div class="wrap"><div class="panel"><h2 data-i18n="howTitle">How EarnMate works</h2><div class="two">
+<div><h3 data-i18n="step1">1. Discover</h3><p class="muted" data-i18n="step1Text">Filter opportunities by category, device and cost.</p></div>
+<div><h3 data-i18n="step2">2. Verify</h3><p class="muted" data-i18n="step2Text">Open the official source and confirm current details.</p></div>
+<div><h3 data-i18n="step3">3. Prepare</h3><p class="muted" data-i18n="step3Text">Build the skills, profile, portfolio or documents required.</p></div>
+<div><h3 data-i18n="step4">4. Start</h3><p class="muted" data-i18n="step4Text">Apply or enroll through the official platform. Never pay a stranger.</p></div>
 </div></div></div></section>
 </main>
 
 <footer><div class="wrap foot">
-<div><h3>EarnMate India</h3><p>A public-benefit discovery site for legitimate online earning, learning and work opportunities in India.</p></div>
-<div><h4>Explore</h4><p><a href="#opportunities">Opportunities</a></p><p><a href="#finder">Finder</a></p><p><a href="#calculator">Calculator</a></p></div>
-<div><h4>Trust</h4><p><a href="#safety">Scam Check</a></p><p>Verify with official sources</p></div>
-</div><div class="wrap copy">© 2026 EarnMate India • Information is educational and does not guarantee income or employment.</div></footer>
+<div><h3>EarnMate India</h3><p data-i18n="footerDesc">A public-benefit discovery site for legitimate online earning, learning and work opportunities in India.</p></div>
+<div><h4 data-i18n="explore">Explore</h4><p><a href="#opportunities" data-i18n="navOpp">Opportunities</a></p><p><a href="#finder" data-i18n="navFinder">Finder</a></p><p><a href="#calculator" data-i18n="navCalc">Calculator</a></p></div>
+<div><h4 data-i18n="trust">Trust</h4><p><a href="#safety" data-i18n="navScam">Scam Check</a></p><p data-i18n="verifyOfficial">Verify with official sources</p></div>
+</div><div class="wrap copy" data-i18n="copyright">© 2026 EarnMate India • Information is educational and does not guarantee income or employment.</div></footer>
 
 <div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="modalBox"><button class="close" onclick="closeModal()">×</button><div id="modalBody"></div></div></div>
 
@@ -117,24 +117,13 @@ const data=[
 {id:12,name:"Amazon Associates India",type:"creator",device:"both",level:"Basic",cost:"free",source:"https://affiliate-program.amazon.in/",desc:"Affiliate program for eligible participants. Income depends on qualifying activity and program rules.",tags:"affiliate amazon content creator"}
 ];
 
-const labels={en:{hero:"Find legitimate ways to earn online.",text:"Compare jobs, learning paths, freelancing and creator opportunities. EarnMate focuses on official sources and practical starting steps — not unrealistic income promises."},te:{hero:"ఆన్‌లైన్‌లో సంపాదించడానికి నమ్మదగిన మార్గాలను కనుగొనండి.",text:"జాబ్స్, లెర్నింగ్, ఫ్రీలాన్సింగ్ మరియు క్రియేటర్ అవకాశాలను పోల్చండి. అధికారిక వనరులు మరియు ప్రాక్టికల్ ప్రారంభ దశలపై EarnMate దృష్టి పెడుతుంది."},hi:{hero:"ऑनलाइन कमाई के भरोसेमंद तरीके खोजें।",text:"नौकरी, सीखने, फ्रीलांसिंग और क्रिएटर अवसरों की तुलना करें। EarnMate आधिकारिक स्रोतों और व्यावहारिक शुरुआत पर ध्यान देता है।"}};
-document.getElementById("lang").onchange=e=>{let x=labels[e.target.value];document.getElementById("heroTitle").textContent=x.hero;document.getElementById("heroText").textContent=x.text};
-
-function render(){
- let q=document.getElementById("search").value.toLowerCase(),t=document.getElementById("type").value,d=document.getElementById("device").value,c=document.getElementById("cost").value;
- let arr=data.filter(x=>(t==="all"||x.type===t)&&(d==="all"||x.device===d||x.device==="both")&&(c==="all"||x.cost===c)&&((x.name+" "+x.desc+" "+x.tags).toLowerCase().includes(q)));
- document.getElementById("count").textContent=arr.length+" results";
- document.getElementById("cards").innerHTML=arr.map(x=>`<article class="card"><div><span class="tag">${x.type.toUpperCase()}</span><h3>${x.name}</h3><p>${x.desc}</p><div class="meta">Device: ${x.device} • Level: ${x.level} • ${x.cost==="free"?"₹0 / free to start":"Fees may apply"}</div></div><div class="actions"><button class="btn secondary small" onclick="details(${x.id})">Details</button><a class="btn primary small" href="${x.source}" target="_blank" rel="noopener">Official source ↗</a></div></article>`).join("");
-}
-function details(id){let x=data.find(a=>a.id===id);document.getElementById("modalBody").innerHTML=`<span class="tag">${x.type.toUpperCase()}</span><h2>${x.name}</h2><p>${x.desc}</p><p><b>Device:</b> ${x.device}<br><b>Level:</b> ${x.level}<br><b>Cost:</b> ${x.cost==="free"?"Free to start":"May involve platform/program fees"}</p><div class="notice">Verify current eligibility, fees, vacancies and terms on the official source before starting.</div><p><a class="btn primary" href="${x.source}" target="_blank" rel="noopener">Open official source ↗</a></p>`;document.getElementById("modal").style.display="flex"}
-function closeModal(){document.getElementById("modal").style.display="none"}
-function calc(){let h=+hours.value||0,d=+days.value||0,r=+rate.value||0;total.textContent="₹"+Math.round(h*d*r).toLocaleString("en-IN")}
-function findPath(){
- let d=fDevice.value,s=fSkill.value,b=+fBudget.value;
- let arr=data.filter(x=>(d==="any"||x.device===d||x.device==="both")&&(s==="any"||x.level.toLowerCase()===s||s==="beginner"&&x.level==="Basic")&&(b>=2000||x.cost==="free"||b>=500&&x.cost==="paid"));
- let top=arr.slice(0,4);
- finderResult.style.display="block";finderResult.innerHTML=`<h3>Your starting options</h3><p>Based on your answers, explore: <b>${top.map(x=>x.name).join(", ")||"the full directory"}</b>.</p><p class="muted">This is a discovery suggestion, not a promise of income.</p>`;
-}
-render();calc();
-</script>
-</body></html>
+const T={
+ en:{
+  publicResource:"PUBLIC RESOURCE • INDIA",hero:"Find legitimate ways to earn online.",heroText:"Compare jobs, learning paths, freelancing and creator opportunities. EarnMate focuses on official sources and practical starting steps — not unrealistic income promises.",
+  navOpp:"Opportunities",navFinder:"Finder",navCalc:"Calculator",navScam:"Scam Check",findPathBtn:"Find My Earning Path",browseBtn:"Browse Opportunities",trust1:"✓ Official-source links",trust2:"✓ No guaranteed-income claims",trust3:"✓ Free to use",trust4:"✓ Mobile friendly",
+  finderTitle:"Find your starting path",finderSub:"Answer four simple questions.",deviceLabel:"Device",timeLabel:"Time per day",experienceLabel:"Experience",budgetLabel:"Budget",any:"Any",phoneOnly:"Phone only",laptopPC:"Laptop / PC",up1:"Up to 1 hour",one3:"1–3 hours",threePlus:"3+ hours",beginner:"Beginner",basicSkills:"Basic skills",skilled:"Skilled",up500:"Up to ₹500",up2000:"Up to ₹2,000",showPaths:"Show suitable paths",
+  oppTitle:"Opportunity directory",oppSub:"Start from the official source. Always verify current terms.",allCategories:"All categories",jobs:"Jobs",learn:"Learn",creator:"Creator",freelance:"Freelance",allDevices:"All devices",phone:"Phone",laptop:"Laptop",both:"Both",anyCost:"Any cost",freeStart:"₹0 / free to start",mayFees:"May involve fees",searchPlaceholder:"Search jobs, courses, freelancing…",
+  calcTitle:"Income planning calculator",calcSub:"Planning tool only — actual earnings vary.",hoursDay:"Hours per day",daysMonth:"Days per month",hourlyRate:"Example hourly rate (₹)",monthlyGross:"Illustrative monthly gross",noGuarantee:"This is not an earnings guarantee.",
+  scamTitle:"Scam check",scamSub:"Before paying money or sharing documents, check these warning signs.",scam1:"They promise guaranteed or unusually high income.",scam2:"They demand an upfront “job fee” or deposit.",scam3:"They pressure you to act immediately.",scam4:"They ask for OTP, PIN, password or remote access.",scam5:"You cannot verify the employer/platform independently.",ruleTitle:"EarnMate rule",ruleBold:"Never treat an EarnMate listing as a guarantee.",ruleText:"We provide discovery and educational information. Use the official website of the platform or employer to verify eligibility, fees, vacancies, payment rules and current terms before starting.",
+  howTitle:"How EarnMate works",step1:"1. Discover",step1Text:"Filter opportunities by category, device and cost.",step2:"2. Verify",step2Text:"Open the official source and confirm current details.",step3:"3. Prepare",step3Text:"Build the skills, profile, portfolio or documents required.",step4:"4. Start",step4Text:"Apply or enroll through the official platform. Never pay a stranger.",explore:"Explore",trust:"Trust",verifyOfficial:"Verify with official sources",footerDesc:"A public-benefit discovery site for legitimate online earning, learning and work opportunities in India.",copyright:"© 2026 EarnMate India • Information is educational and does not guarantee income or employment.",
+  results:n=>`${n} results`,deviceMeta:"Device",levelMeta:"Level",freeMeta:"₹0 / free to start",feesMeta:"Fees may apply",details:"Details",official:"Official source ↗",modalVerify:"Verify current eligibility, fees, vacancies and terms on the official source before starting.",openOfficial:"Open official source ↗",startingOptions:"Your starting options",basedOn:"Based o
