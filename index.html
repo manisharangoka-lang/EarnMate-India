@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>EarnMate India — Legitimate Earning Opportunities</title>
+<title>EarnMate India — Legitimate Earning Opportunities, Guides & Career Resources</title>
 
-<meta name="description" content="EarnMate India helps users discover legitimate earning opportunities, free learning resources, jobs, freelancing and creator opportunities.">
+<meta name="description" content="EarnMate India helps users discover legitimate earning opportunities, free learning resources, jobs, freelancing and creator opportunities through practical guides and official-source links.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#2563eb">
 <link rel="canonical" href="https://manisharangoka-lang.github.io/EarnMate-India/">
@@ -796,6 +796,18 @@ time, eligibility, location and the platform's own policies.
 </section>
 
 
+<section class="container" style="padding-top:10px;padding-bottom:10px">
+<div class="card">
+<h2 class="section-title" style="font-size:22px">Our Editorial Standard</h2>
+<p>
+EarnMate India aims to add original explanations, practical comparisons and safety guidance
+rather than simply copying information from other websites. Opportunity listings link users
+to the relevant official or partner website, and earnings are never guaranteed.
+</p>
+</div>
+</section>
+
+
 <footer>
 
 <div class="footer-inner">
@@ -826,10 +838,11 @@ learning resources and practical career guidance.
 
 <h3>Information</h3>
 
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="#privacy">Privacy Policy</a>
-<a href="#terms">Terms & Conditions</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms & Conditions</a>
+<a href="disclaimer.html">Disclaimer</a>
 
 </div>
 
@@ -840,12 +853,6 @@ learning resources and practical career guidance.
 </div>
 
 </footer>
-
-
-<div id="about" style="display:none"></div>
-<div id="contact" style="display:none"></div>
-<div id="privacy" style="display:none"></div>
-<div id="terms" style="display:none"></div>
 
 
 <div class="modal" id="modal">
@@ -988,134 +995,4 @@ device:"both",
 cost:"free",
 tags:["Freelance","Services","Online"],
 description:"Marketplace for offering freelance services.",
-details:"Create service listings and build a freelance profile. Results depend on skills, demand and competition.",
-url:"https://www.fiverr.com/"
-},
-
-{
-id:11,
-title:"Meta Blueprint",
-category:"learn",
-device:"both",
-cost:"free",
-tags:["Meta","Marketing","Free"],
-description:"Training resources for Meta marketing and advertising.",
-details:"Learn digital marketing concepts and Meta advertising tools.",
-url:"https://www.facebook.com/business/learn"
-},
-
-{
-id:12,
-title:"Amazon Associates India",
-category:"creator",
-device:"both",
-cost:"free",
-tags:["Affiliate","Creator","India"],
-description:"Affiliate program for eligible websites and content creators.",
-details:"Eligible publishers can earn commissions from qualifying purchases made through special affiliate links.",
-url:"https://affiliate-program.amazon.in/"
-}
-
-];
-
-
-const guides = [
-
-{
-title:"How to Start Freelancing With No Experience",
-text:"Choose one service, learn the basics, create sample work and apply only to suitable projects. Avoid anyone demanding large upfront payments."
-},
-
-{
-title:"How to Find Legitimate Work-From-Home Opportunities",
-text:"Use established job platforms and official company career pages. Verify the employer before sharing documents or paying any amount."
-},
-
-{
-title:"How YouTube Earning Actually Works",
-text:"YouTube income can come from advertising, memberships, shopping and other eligible features. Monetization requires meeting YouTube's current policies and eligibility requirements."
-},
-
-{
-title:"Free Ways to Learn Digital Skills",
-text:"Start with resources such as Skill India, SWAYAM, NPTEL, Microsoft Learn and Google Skillshop before paying for expensive courses."
-},
-
-{
-title:"How to Avoid Online Earning Scams",
-text:"Guaranteed income, urgent payment demands, fake recruitment fees and requests for OTPs or UPI PINs are major warning signs."
-},
-
-{
-title:"How to Choose an Earning Method",
-text:"Compare your device, available time, skills, starting budget and income expectations before choosing a path."
-}
-
-];
-
-
-const resources = [
-
-{
-title:"Skill India Digital Hub",
-url:"https://www.skillindiadigital.gov.in/"
-},
-
-{
-title:"SWAYAM",
-url:"https://swayam.gov.in/"
-},
-
-{
-title:"National Career Service",
-url:"https://www.ncs.gov.in/"
-},
-
-{
-title:"Microsoft Learn",
-url:"https://learn.microsoft.com/training/"
-},
-
-{
-title:"Google Skillshop",
-url:"https://skillshop.withgoogle.com/"
-},
-
-{
-title:"YouTube Help",
-url:"https://support.google.com/youtube/"
-}
-
-];
-
-
-function escapeHTML(value){
-
-return String(value)
-.replace(/&/g,"&amp;")
-.replace(/</g,"&lt;")
-.replace(/>/g,"&gt;")
-.replace(/"/g,"&quot;")
-.replace(/'/g,"&#039;");
-
-}
-
-
-function render(){
-
-const grid=document.getElementById("opportunityGrid");
-
-const search=document.getElementById("search").value.toLowerCase();
-
-const category=document.getElementById("category").value;
-
-const device=document.getElementById("deviceFilter").value;
-
-const cost=document.getElementById("costFilter").value;
-
-
-const filtered=opportunities.filter(o=>{
-
-const matchesSearch=
-o.title.toLowerCase().includes(search) ||
-o
+details
