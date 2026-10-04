@@ -1,998 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>EarnMate India — Legitimate Earning Opportunities, Guides & Career Resources</title>
-
-<meta name="description" content="EarnMate India helps users discover legitimate earning opportunities, free learning resources, jobs, freelancing and creator opportunities through practical guides and official-source links.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="EarnMate India helps people discover legitimate jobs, skills, freelancing and creator opportunities through practical guides and official sources.">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#2563eb">
+<meta name="theme-color" content="#0f766e">
 <link rel="canonical" href="https://manisharangoka-lang.github.io/EarnMate-India/">
-
+<title>EarnMate India — Legitimate Earning Opportunities, Guides & Career Resources</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f7fb;
-color:#172033;
-line-height:1.6
-}
-
-a{text-decoration:none;color:inherit}
-
-header{
-background:#fff;
-border-bottom:1px solid #e5e7eb;
-position:sticky;
-top:0;
-z-index:100
-}
-
-.nav{
-max-width:1150px;
-margin:auto;
-padding:14px 18px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:15px
-}
-
-.logo{
-font-size:23px;
-font-weight:800;
-color:#2563eb
-}
-
-.nav-links{
-display:flex;
-gap:18px;
-align-items:center;
-font-size:14px
-}
-
-.nav-links a:hover{color:#2563eb}
-
-.lang{
-padding:8px;
-border:1px solid #d1d5db;
-border-radius:8px;
-background:#fff
-}
-
-.hero{
-background:linear-gradient(135deg,#2563eb,#4f46e5);
-color:white;
-padding:65px 20px
-}
-
-.hero-inner{
-max-width:1050px;
-margin:auto;
-text-align:center
-}
-
-.hero h1{
-font-size:44px;
-line-height:1.15;
-margin-bottom:18px
-}
-
-.hero p{
-font-size:18px;
-max-width:750px;
-margin:0 auto 25px;
-opacity:.95
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap
-}
-
-.btn{
-display:inline-block;
-padding:12px 20px;
-border-radius:9px;
-font-weight:700;
-border:none;
-cursor:pointer
-}
-
-.btn-primary{
-background:#fff;
-color:#2563eb
-}
-
-.btn-secondary{
-background:rgba(255,255,255,.15);
-color:#fff;
-border:1px solid rgba(255,255,255,.4)
-}
-
-.container{
-max-width:1150px;
-margin:auto;
-padding:40px 18px
-}
-
-.section-title{
-font-size:30px;
-margin-bottom:10px
-}
-
-.section-subtitle{
-color:#667085;
-margin-bottom:25px
-}
-
-.card{
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:14px;
-padding:22px;
-box-shadow:0 4px 15px rgba(0,0,0,.04)
-}
-
-.finder{
-margin-top:-35px;
-position:relative
-}
-
-.finder-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:14px;
-margin-top:20px
-}
-
-label{
-font-weight:700;
-font-size:14px;
-display:block;
-margin-bottom:6px
-}
-
-select,input{
-width:100%;
-padding:11px;
-border:1px solid #d1d5db;
-border-radius:8px;
-background:white;
-font-size:14px
-}
-
-.finder-result{
-margin-top:20px;
-padding:16px;
-background:#eff6ff;
-border:1px solid #bfdbfe;
-border-radius:10px;
-display:none
-}
-
-.filters{
-display:grid;
-grid-template-columns:2fr 1fr 1fr 1fr;
-gap:12px;
-margin-bottom:25px
-}
-
-.opportunity-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px
-}
-
-.opportunity{
-display:flex;
-flex-direction:column;
-height:100%
-}
-
-.badges{
-display:flex;
-gap:7px;
-flex-wrap:wrap;
-margin:10px 0
-}
-
-.badge{
-background:#eef2ff;
-color:#3730a3;
-padding:4px 8px;
-border-radius:999px;
-font-size:12px;
-font-weight:700
-}
-
-.badge.free{
-background:#ecfdf3;
-color:#047857
-}
-
-.opportunity h3{
-font-size:20px;
-margin-bottom:7px
-}
-
-.opportunity p{
-font-size:14px;
-color:#667085;
-flex:1
-}
-
-.card-actions{
-display:flex;
-gap:8px;
-margin-top:18px;
-flex-wrap:wrap
-}
-
-.small-btn{
-padding:9px 13px;
-border-radius:8px;
-font-weight:700;
-font-size:13px;
-cursor:pointer;
-border:1px solid #d1d5db;
-background:#fff
-}
-
-.small-btn.primary{
-background:#2563eb;
-color:#fff;
-border-color:#2563eb
-}
-
-.guides{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px
-}
-
-.guide h3{
-margin-bottom:8px
-}
-
-.guide p{
-font-size:14px;
-color:#667085
-}
-
-.calc-box{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-align-items:center
-}
-
-.calc-result{
-background:#eff6ff;
-border-radius:12px;
-padding:25px;
-text-align:center
-}
-
-.calc-result strong{
-display:block;
-font-size:35px;
-color:#2563eb
-}
-
-.disclosure{
-background:#fff7ed;
-border:1px solid #fed7aa;
-padding:18px;
-border-radius:12px;
-font-size:14px
-}
-
-.ad-box{
-min-height:100px;
-border:1px dashed #cbd5e1;
-border-radius:12px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#64748b;
-background:#f8fafc
-}
-
-.scam{
-background:#fff;
-border-left:5px solid #dc2626;
-padding:20px;
-border-radius:10px
-}
-
-.scam ul{
-padding-left:20px;
-margin-top:10px
-}
-
-.resource-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px
-}
-
-.resource{
-padding:18px;
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:12px
-}
-
-footer{
-background:#111827;
-color:#d1d5db;
-margin-top:50px
-}
-
-.footer-inner{
-max-width:1150px;
-margin:auto;
-padding:35px 18px;
-display:grid;
-grid-template-columns:2fr 1fr 1fr;
-gap:30px
-}
-
-footer h3{
-color:#fff;
-margin-bottom:10px
-}
-
-footer a{
-display:block;
-margin:7px 0;
-font-size:14px
-}
-
-.footer-bottom{
-border-top:1px solid #374151;
-padding:18px;
-text-align:center;
-font-size:13px
-}
-
-.modal{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.6);
-z-index:200;
-padding:20px;
-align-items:center;
-justify-content:center
-}
-
-.modal-content{
-background:#fff;
-max-width:600px;
-width:100%;
-max-height:90vh;
-overflow:auto;
-border-radius:15px;
-padding:25px
-}
-
-.close{
-float:right;
-font-size:25px;
-cursor:pointer
-}
-
-.hidden{
-display:none!important
-}
-
-@media(max-width:850px){
-
-.hero h1{font-size:34px}
-
-.nav-links{
-display:none
-}
-
-.finder-grid,
-.filters,
-.calc-box{
-grid-template-columns:1fr
-}
-
-.opportunity-grid,
-.guides,
-.resource-grid{
-grid-template-columns:1fr 1fr
-}
-
-.footer-inner{
-grid-template-columns:1fr 1fr
-}
-
-}
-
-@media(max-width:550px){
-
-.hero{
-padding:45px 16px
-}
-
-.hero h1{
-font-size:30px
-}
-
-.hero p{
-font-size:16px
-}
-
-.container{
-padding:32px 14px
-}
-
-.opportunity-grid,
-.guides,
-.resource-grid,
-.footer-inner{
-grid-template-columns:1fr
-}
-
-.section-title{
-font-size:25px
-}
-
-}
+:root{--p:#0f766e;--p2:#115e59;--bg:#f5f7f8;--card:#fff;--text:#17202a;--muted:#667085;--line:#e4e7ec;--good:#067647;--warn:#b54708;--danger:#b42318;--shadow:0 10px 30px #10182812}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:20;background:#ffffffee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-weight:900;font-size:21px;color:var(--p);text-decoration:none}.brand span{color:#111827}nav{display:flex;gap:18px;align-items:center}nav a{text-decoration:none;font-size:14px;color:#475467}.lang{border:1px solid var(--line);border-radius:10px;padding:8px;background:#fff;font-weight:650}
+.hero{padding:66px 0 42px;background:linear-gradient(180deg,#e9fffb,#f5f7f8)}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.02;max-width:800px;margin:0 0 18px;letter-spacing:-2px}.hero p{font-size:18px;color:#475467;max-width:760px}.heroBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--p);color:white}.secondary{background:white;border:1px solid var(--line);color:#344054}.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:25px;color:#475467;font-size:13px}.trust b{color:var(--good)}
+section{padding:42px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}.sectionHead h2{margin:0;font-size:28px}.muted{color:var(--muted)}.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;min-height:250px}.card h3{margin:0 0 7px}.card p{font-size:14px;color:#667085;margin:0 0 12px}.tag{display:inline-block;font-size:11px;font-weight:800;padding:5px 8px;border-radius:999px;background:#ecfdf3;color:#067647;margin-bottom:10px}.tag.sponsored{background:#fff4e5;color:#9a3412}.meta{font-size:12px;color:#667085;margin-bottom:12px}.actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}.small{font-size:12px;padding:9px 11px}
+.finder{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.finder label,.calc label{font-size:12px;font-weight:700}.finder select,.finder input,.calc input,.controls input,.controls select{width:100%;margin-top:6px;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff}.result{margin-top:15px;padding:16px;border-radius:13px;background:#f0fdf9;border:1px solid #b7eadf;display:none}
+.controls{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:10px;margin-bottom:16px}.calc{display:grid;grid-template-columns:1fr 1fr;gap:12px}.bigNumber{font-size:34px;font-weight:900;color:var(--p);margin-top:10px}
+.notice{border-left:4px solid var(--warn);background:#fffaeb;padding:14px;border-radius:8px;color:#7a2e0b;font-size:13px}.disclosure{font-size:12px;color:#667085;background:#f9fafb;border:1px solid var(--line);border-radius:12px;padding:12px}.article{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.article h3{margin-top:0}.article ul{padding-left:20px}
+.ad-slot{display:none;min-height:110px;border:1px dashed #98a2b3;border-radius:14px;background:#fff;text-align:center;padding:18px;color:#667085;font-size:12px;margin:12px 0}.ad-slot.active{display:block}
+.pill{font-size:11px;font-weight:800;border-radius:999px;padding:4px 8px;background:#eef4ff;color:#3538cd;display:inline-block}.checklist{display:grid;gap:9px}.check{display:flex;gap:9px;align-items:flex-start;padding:10px;border:1px solid var(--line);border-radius:10px}.check input{margin-top:4px}
+footer{background:#101828;color:#d0d5dd;padding:35px 0;margin-top:20px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.foot h3,.foot h4{color:white;margin-top:0}.copy{border-top:1px solid #344054;margin-top:24px;padding-top:18px;font-size:12px}
+.modal{position:fixed;inset:0;background:#10182899;display:none;align-items:center;justify-content:center;padding:18px;z-index:50}.modalBox{background:white;border-radius:18px;max-width:680px;width:100%;max-height:85vh;overflow:auto;padding:22px}.close{float:right;border:0;background:#f2f4f7;border-radius:50%;width:34px;height:34px;cursor:pointer}
+@media(max-width:800px){nav a{display:none}.finder,.controls,.two,.grid,.three{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.hero{padding-top:45px}.finder,.controls,.two,.grid,.three,.calc,.foot{grid-template-columns:1fr}.sectionHead{display:block}.hero h1{letter-spacing:-1px}}
 </style>
 </head>
-
 <body>
-
-<header>
-<div class="nav">
-
-<div class="logo">EarnMate India</div>
-
-<div class="nav-links">
-<a href="#opportunities">Opportunities</a>
-<a href="#guides">Guides</a>
-<a href="#calculator">Calculator</a>
-<a href="#scam">Scam Check</a>
-</div>
-
-<select class="lang" id="language" onchange="setLanguage(this.value)">
-<option value="en">English</option>
-<option value="te">తెలుగు</option>
-<option value="hi">हिन्दी</option>
-</select>
-
-</div>
-</header>
-
-
-<section class="hero">
-<div class="hero-inner">
-
-<h1 id="heroTitle">
-Find Legitimate Ways to Earn in India
-</h1>
-
-<p id="heroText">
-Discover jobs, freelancing, creator opportunities and free learning resources.
-EarnMate helps you compare options without promising guaranteed income.
-</p>
-
-<div class="buttons">
-<button class="btn btn-primary" onclick="document.getElementById('finder').scrollIntoView()">
-Find My Earning Path
-</button>
-
-<button class="btn btn-secondary" onclick="document.getElementById('opportunities').scrollIntoView()">
-Browse Opportunities
-</button>
-</div>
-
-</div>
-</section>
-
-
-<section class="container finder" id="finder">
-
-<div class="card">
-
-<h2 class="section-title" id="finderTitle">
-Find My Earning Path
-</h2>
-
-<p class="section-subtitle" id="finderText">
-Answer a few questions and get a practical starting recommendation.
-</p>
-
-<div class="finder-grid">
-
-<div>
-<label>Device</label>
-<select id="device">
-<option value="phone">Phone only</option>
-<option value="laptop">Laptop / Computer</option>
-<option value="both">Phone + Laptop</option>
-</select>
-</div>
-
-<div>
-<label>Time available</label>
-<select id="time">
-<option value="1">Up to 1 hour/day</option>
-<option value="3">1–3 hours/day</option>
-<option value="6">3+ hours/day</option>
-</select>
-</div>
-
-<div>
-<label>Experience</label>
-<select id="experience">
-<option value="beginner">Beginner</option>
-<option value="basic">Basic skills</option>
-<option value="experienced">Experienced</option>
-</select>
-</div>
-
-<div>
-<label>Budget</label>
-<select id="budget">
-<option value="0">₹0</option>
-<option value="500">Under ₹500</option>
-<option value="1000">₹500+</option>
-</select>
-</div>
-
-</div>
-
-<div style="margin-top:18px">
-<button class="btn btn-primary" style="background:#2563eb;color:#fff" onclick="findPath()">
-Find My Path
-</button>
-</div>
-
-<div id="finderResult" class="finder-result"></div>
-
-</div>
-</section>
-
-
-<section class="container" id="opportunities">
-
-<h2 class="section-title" id="opportunitiesTitle">
-Legitimate Opportunities
-</h2>
-
-<p class="section-subtitle" id="opportunitiesText">
-Start with official websites and understand the requirements before applying.
-</p>
-
-<div class="filters">
-
-<input
-id="search"
-placeholder="Search opportunities..."
-oninput="render()">
-
-<select id="category" onchange="render()">
-<option value="all">All categories</option>
-<option value="jobs">Jobs</option>
-<option value="learn">Learn</option>
-<option value="creator">Creator</option>
-<option value="freelance">Freelance</option>
-</select>
-
-<select id="deviceFilter" onchange="render()">
-<option value="all">Any device</option>
-<option value="phone">Phone</option>
-<option value="laptop">Laptop</option>
-<option value="both">Both</option>
-</select>
-
-<select id="costFilter" onchange="render()">
-<option value="all">Any cost</option>
-<option value="free">Free</option>
-<option value="paid">Paid / variable</option>
-</select>
-
-</div>
-
-<div id="opportunityGrid" class="opportunity-grid"></div>
-
-</section>
-
-
-<section class="container" id="guides">
-
-<h2 class="section-title" id="guidesTitle">
-Free Earning Guides
-</h2>
-
-<p class="section-subtitle">
-Practical beginner-friendly guides. No guaranteed-income claims.
-</p>
-
-<div class="guides" id="guideGrid"></div>
-
-</section>
-
-
-<section class="container" id="calculator">
-
-<div class="card">
-
-<h2 class="section-title">
-Earning Calculator
-</h2>
-
-<p class="section-subtitle">
-Estimate potential monthly gross income from hours and an assumed hourly rate.
-Actual earnings can be much lower or higher.
-</p>
-
-<div class="calc-box">
-
-<div>
-
-<label>Hours per day</label>
-<input id="hours" type="number" value="2" min="0">
-
-<label style="margin-top:15px">
-Estimated ₹ per hour
-</label>
-<input id="rate" type="number" value="150" min="0">
-
-<label style="margin-top:15px">
-Days per month
-</label>
-<input id="days" type="number" value="26" min="1">
-
-<button
-class="btn"
-style="margin-top:18px;background:#2563eb;color:white"
-onclick="calc()">
-Calculate
-</button>
-
-</div>
-
-<div class="calc-result">
-
-<span>Estimated monthly gross</span>
-<strong id="calcResult">₹7,800</strong>
-
-<small>
-This is only a mathematical estimate, not an income guarantee.
-</small>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="container">
-
-<div class="disclosure">
-
-<strong>Transparency & Affiliate Disclosure</strong>
-
-<p style="margin-top:8px">
-EarnMate India may earn money through advertising, affiliate commissions or clearly labelled sponsored listings.
-This does not increase the price you pay through an affiliate link.
-We aim to recommend legitimate resources and direct users to official websites.
-</p>
-
-</div>
-
-</section>
-
-
-<section class="container">
-
-<div class="card">
-
-<h2 class="section-title">
-Advertising
-</h2>
-
-<p class="section-subtitle">
-EarnMate India may display advertisements to support the website and keep the opportunity directory free for users.
-</p>
-
-<div class="ad-box" id="adSlot">
-Advertisement
-</div>
-
-</div>
-
-</section>
-
-
-<section class="container" id="scam">
-
-<div class="scam">
-
-<h2 class="section-title">
-Avoid Online Earning Scams
-</h2>
-
-<p>
-Never send money simply because someone promises a guaranteed job or guaranteed income.
-</p>
-
-<ul>
-<li>Do not pay a recruitment fee for a job without independently verifying the employer.</li>
-<li>Never share OTPs, UPI PINs, passwords or card PINs.</li>
-<li>Be suspicious of guaranteed daily-income promises.</li>
-<li>Verify the company website and contact details.</li>
-<li>Use official application websites whenever possible.</li>
-<li>Do not install unknown APK files sent through WhatsApp or Telegram.</li>
-</ul>
-
-</div>
-
-</section>
-
-
-<section class="container">
-
-<h2 class="section-title">
-Recommended Official Resources
-</h2>
-
-<p class="section-subtitle">
-Start with established platforms and read their rules before signing up.
-</p>
-
-<div class="resource-grid" id="resourceGrid"></div>
-
-</section>
-
-
-<section class="container">
-
-<div class="card">
-
-<h2 class="section-title">
-How EarnMate Works
-</h2>
-
-<p>
-<strong>1. Discover:</strong> Find earning and learning opportunities.
-</p>
-
-<p>
-<strong>2. Compare:</strong> Check device, skills, cost and requirements.
-</p>
-
-<p>
-<strong>3. Verify:</strong> Use official websites and avoid suspicious offers.
-</p>
-
-<p>
-<strong>4. Start:</strong> Choose an option that fits your situation.
-</p>
-
-<p style="margin-top:12px">
-EarnMate does not guarantee income. Earnings depend on skills, demand,
-time, eligibility, location and the platform's own policies.
-</p>
-
-</div>
-
-</section>
-
-
-<section class="container" style="padding-top:10px;padding-bottom:10px">
-<div class="card">
-<h2 class="section-title" style="font-size:22px">Our Editorial Standard</h2>
-<p>
-EarnMate India aims to add original explanations, practical comparisons and safety guidance
-rather than simply copying information from other websites. Opportunity listings link users
-to the relevant official or partner website, and earnings are never guaranteed.
-</p>
-</div>
-</section>
-
-
-<footer>
-
-<div class="footer-inner">
-
-<div>
-
-<h3>EarnMate India</h3>
-
-<p>
-A free discovery platform for legitimate earning opportunities,
-learning resources and practical career guidance.
-</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="#opportunities">Opportunities</a>
-<a href="#guides">Guides</a>
-<a href="#calculator">Calculator</a>
-<a href="#scam">Scam Check</a>
-
-</div>
-
-<div>
-
-<h3>Information</h3>
-
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="privacy.html">Privacy Policy</a>
-<a href="terms.html">Terms & Conditions</a>
-<a href="disclaimer.html">Disclaimer</a>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-© 2026 EarnMate India. All rights reserved.
-</div>
-
-</footer>
-
-
-<div class="modal" id="modal">
-
-<div class="modal-content">
-
-<span class="close" onclick="closeModal()">×</span>
-
-<div id="modalBody"></div>
-
-</div>
-
-</div>
-
+<header><div class="wrap nav"><a class="brand" href="#">EarnMate <span>India</span></a><nav><a href="#opportunities">Opportunities</a><a href="#guides">Guides</a><a href="#finder">Finder</a><a href="#calculator">Calculator</a><a href="#safety">Scam Check</a></nav><select class="lang" id="lang" onchange="setLanguage(this.value)" aria-label="Language"><option value="en">English</option><option value="te">తెలుగు</option><option value="hi">हिन्दी</option></select></div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+<div class="tag">PUBLIC RESOURCE • INDIA</div>
+<h1 id="heroTitle">Find legitimate ways to earn online.</h1>
+<p id="heroText">Compare jobs, learning paths, freelancing and creator opportunities. EarnMate focuses on official sources, practical guides and realistic expectations — not guaranteed-income claims.</p>
+<div class="heroBtns"><a class="btn primary" href="#finder">Find My Earning Path</a><a class="btn secondary" href="#opportunities">Browse Opportunities</a></div>
+<div class="trust"><span>✓ Official-source links</span><span>✓ Original educational guides</span><span>✓ No guaranteed-income claims</span><span>✓ Free to use</span></div>
+</div></section>
+
+<section id="finder"><div class="wrap"><div class="sectionHead"><div><h2>Find your starting path</h2><div class="muted">Answer four simple questions.</div></div></div>
+<div class="panel"><div class="finder">
+<label>Device<select id="fDevice"><option value="any">Any</option><option value="phone">Phone only</option><option value="laptop">Laptop / PC</option></select></label>
+<label>Time per day<select id="fTime"><option value="any">Any</option><option value="1">Up to 1 hour</option><option value="2">1–3 hours</option><option value="4">3+ hours</option></select></label>
+<label>Experience<select id="fSkill"><option value="any">Any</option><option value="beginner">Beginner</option><option value="basic">Basic skills</option><option value="skilled">Skilled</option></select></label>
+<label>Budget<select id="fBudget"><option value="0">₹0</option><option value="500">Up to ₹500</option><option value="2000">Up to ₹2,000</option></select></label>
+</div><button class="btn primary" style="margin-top:15px" onclick="findPath()">Show suitable paths</button><div id="finderResult" class="result"></div></div></div></section>
+
+<section id="opportunities"><div class="wrap"><div class="sectionHead"><div><h2>Opportunity directory</h2><div class="muted">Start from the official source. Always verify current terms.</div></div><strong id="count"></strong></div>
+<div class="controls"><input id="search" placeholder="Search jobs, courses, freelancing…" oninput="render()"><select id="type" onchange="render()"><option value="all">All categories</option><option value="job">Jobs</option><option value="learn">Learn</option><option value="creator">Creator</option><option value="freelance">Freelance</option></select><select id="device" onchange="render()"><option value="all">All devices</option><option value="phone">Phone</option><option value="laptop">Laptop</option><option value="both">Both</option></select><select id="cost" onchange="render()"><option value="all">All costs</option><option value="free">Free / ₹0</option><option value="paid">May have fees</option></select></div>
+<div id="cards" class="grid"></div></div></section>
+
+<section id="guides"><div class="wrap"><div class="sectionHead"><div><h2>Practical earning guides</h2><div class="muted">Original educational content for beginners in India.</div></div></div>
+<div class="three">
+<article class="article"><h3>How to start freelancing with no experience</h3><p>Start with one service you can learn and demonstrate. Build 2–3 small portfolio samples, create a clear profile, and apply only to work you can realistically complete.</p><h4>Simple plan</h4><ul><li>Choose one skill: video editing, design, writing, data entry or another legitimate service.</li><li>Learn the basics using free training resources.</li><li>Create sample work before looking for clients.</li><li>Use established marketplaces and never pay someone just to receive a job.</li></ul></article>
+<article class="article"><h3>How to find legitimate work-from-home opportunities</h3><p>Search through established employers, government employment portals and well-known platforms. Verify the employer independently rather than trusting a WhatsApp message or social-media advertisement.</p><h4>Before applying</h4><ul><li>Check the employer's official website.</li><li>Look for a real job description and application process.</li><li>Never share OTPs, passwords or banking PINs.</li><li>Be cautious when a recruiter demands an upfront payment.</li></ul></article>
+<article class="article"><h3>How YouTube earning actually works</h3><p>YouTube can become a long-term creator business, but income is not automatic. A creator normally needs consistent original content, an audience and eligibility under YouTube's current monetization policies.</p><h4>Better starting strategy</h4><ul><li>Choose one clear topic.</li><li>Create useful original videos consistently.</li><li>Improve titles, thumbnails and viewer retention.</li><li>Use official YouTube policies to understand monetization eligibility.</li></ul></article>
+<article class="article"><h3>Free ways to learn digital skills</h3><p>Beginners can start with government and major technology learning platforms before paying for an expensive course.</p><h4>Good starting points</h4><ul><li>Skill India Digital Hub</li><li>SWAYAM and NPTEL</li><li>Microsoft Learn</li><li>Google Skillshop</li></ul></article>
+<article class="article"><h3>How to avoid online earning scams</h3><p>Scammers often combine unrealistic income promises with urgency and requests for money or sensitive information.</p><h4>Remember</h4><ul><li>High income with no skill or work is a major warning sign.</li><li>Never pay a stranger for a guaranteed job.</li><li>Do not install remote-control apps because a recruiter tells you to.</li><li>Verify through an official website or known platform.</li></ul></article>
+<article class="article"><h3>How to choose an earning method</h3><p>Choose based on your available device, time, skills and tolerance for uncertainty. A job, freelance service, creator business and affiliate business have different requirements and timelines.</p><h4>Use the rule</h4><ul><li>Need stable employment? Start with jobs.</li><li>Want a skill? Start with learning.</li><li>Have a service skill? Explore freelancing.</li><li>Want a long-term audience business? Explore content creation.</li></ul></article>
+</div></div></section>
+
+<section><div class="wrap"><div class="disclosure"><strong>Affiliate disclosure:</strong> Some links may become affiliate links after EarnMate joins an approved affiliate program. If you buy through a qualifying link, EarnMate may receive a commission at no extra cost to you. Sponsored placements, if any, will be clearly labelled.</div></div></section>
+
+<section id="calculator"><div class="wrap"><div class="sectionHead"><div><h2>Income planning calculator</h2><div class="muted">A planning example only — actual earnings can differ.</div></div></div>
+<div class="two"><div class="panel"><div class="calc"><label>Hours per day<input id="hours" type="number" value="2" min="0" oninput="calc()"></label><label>Days per month<input id="days" type="number" value="25" min="0" oninput="calc()"></label><label>Example hourly rate (₹)<input id="rate" type="number" value="100" min="0" oninput="calc()"></label></div><div class="bigNumber" id="total">₹5,000</div><div class="muted">This is not an earnings guarantee.</div></div>
+<div class="panel"><h3>How EarnMate can earn from traffic</h3><p class="muted">People can use the site for free; useful traffic can be responsibly monetized.</p><div class="three"><div class="panel"><span class="pill">Option 1</span><h3>Advertising</h3><p class="muted">After useful content and traffic grow, approved advertising networks such as Google AdSense can be considered.</p></div><div class="panel"><span class="pill">Option 2</span><h3>Affiliate commissions</h3><p class="muted">Relevant tools and services can be linked through approved affiliate programs with clear disclosure.</p></div><div class="panel"><span class="pill">Option 3</span><h3>Sponsored listings</h3><p class="muted">Trusted businesses may later pay for clearly labelled Sponsored placements. Payment does not mean EarnMate guarantees the business.</p></div></div></div></div></div></section>
+
+<section><div class="wrap"><div id="adSlot" class="ad-slot">Your approved advertising setup will appear here.</div><div class="notice"><strong>Important:</strong> Do not add fake AdSense IDs, fake affiliate IDs or unverified paid listings. Monetization features should only be activated after the relevant account/program approves you.</div></div></section>
+
+<section id="safety"><div class="wrap"><div class="sectionHead"><div><h2>Scam Check</h2><div class="muted">Check these warning signs before paying money or sharing documents.</div></div></div>
+<div class="panel checklist"><label class="check"><input type="checkbox"><span>They promise guaranteed or unusually high income.</span></label><label class="check"><input type="checkbox"><span>They ask for an upfront job fee or deposit.</span></label><label class="check"><input type="checkbox"><span>They pressure you to act immediately.</span></label><label class="check"><input type="checkbox"><span>They ask for OTP, PIN, password or remote access.</span></label><label class="check"><input type="checkbox"><span>You cannot independently verify the employer or platform.</span></label></div></div></section>
+
+<section><div class="wrap"><div class="panel"><h2>EarnMate rules</h2><p><strong>Never treat an EarnMate listing as an income guarantee.</strong> We help people discover opportunities and educational information. Before starting, verify eligibility, fees, vacancies, payment rules and current terms on the official website of the platform or employer.</p></div></div></section>
+
+<section><div class="wrap"><div class="sectionHead"><div><h2>How EarnMate works</h2></div></div><div class="three"><div class="panel"><h3>1. Search</h3><p class="muted">Filter opportunities by category, device and cost.</p></div><div class="panel"><h3>2. Verify</h3><p class="muted">Open the official source and confirm current details.</p></div><div class="panel"><h3>3. Prepare</h3><p class="muted">Prepare the skills, profile, portfolio or documents required.</p></div><div class="panel"><h3>4. Start</h3><p class="muted">Apply or enrol through the official platform. Never pay strangers.</p></div></div></div></section>
+
+<section><div class="wrap"><div class="sectionHead"><div><h2>Recommended resources</h2><div class="muted">Useful resources that can help users start learning or earning.</div></div></div><div id="resourceCards" class="three"></div></div></section>
+</main>
+
+<footer><div class="wrap"><div class="foot"><div><h3>EarnMate India</h3><p>A public-interest website helping people in India discover legitimate online earning, learning and work opportunities.</p></div><div><h4>Explore</h4><p><a href="#opportunities">Opportunities</a></p><p><a href="#guides">Guides</a></p><p><a href="#finder">Finder</a></p></div><div><h4>Trust</h4><p><a href="#safety">Scam Check</a></p><p><a href="#privacy">Privacy</a></p><p><a href="#terms">Terms</a></p></div></div><div class="copy">© 2026 EarnMate India • Information is educational and does not guarantee income or employment.</div></div></footer>
+
+<div id="privacy" style="display:none"></div><div id="terms" style="display:none"></div>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modalBox"><button class="close" onclick="closeModal()">×</button><div id="modalBody"></div></div></div>
 
 <script>
+const CONFIG={ADSENSE_CLIENT:"",ADSENSE_SLOT:"",AMAZON_TAG:""};
 
-const CONFIG = {
-ADSENSE_CLIENT:"",
-ADSENSE_SLOT:"",
-AMAZON_TAG:""
-};
+const data=[
+{id:1,name:"Skill India Digital Hub",type:"learn",device:"both",level:"Beginner",cost:"free",source:"https://www.skillindiadigital.gov.in/",tags:"skills courses government",desc:"Government-backed platform for discovering skill-development programs and learning opportunities."},
+{id:2,name:"SWAYAM Courses",type:"learn",device:"both",level:"Beginner",cost:"free",source:"https://swayam.gov.in/",tags:"courses online education government",desc:"Government learning platform offering courses from universities and institutions."},
+{id:3,name:"NPTEL on SWAYAM",type:"learn",device:"both",level:"Basic",cost:"free",source:"https://swayam.gov.in/nc_details/NPTEL",tags:"engineering technology courses",desc:"Technical and engineering courses from IITs and other institutions."},
+{id:4,name:"YouTube Creator",type:"creator",device:"phone",level:"Beginner",cost:"free",source:"https://support.google.com/youtube/",tags:"youtube video creator content",desc:"Learn how to create and grow a YouTube channel. Monetization depends on eligibility and YouTube policies."},
+{id:5,name:"Upwork Freelancing",type:"freelance",device:"laptop",level:"Basic",cost:"free",source:"https://support.upwork.com/",tags:"freelance remote jobs online",desc:"Freelancing marketplace where eligible users can offer professional services."},
+{id:6,name:"National Career Service",type:"job",device:"both",level:"Beginner",cost:"free",source:"https://www.ncs.gov.in/",tags:"jobs government employment india",desc:"Government employment and career services portal."},
+{id:7,name:"Google Skillshop",type:"learn",device:"both",level:"Beginner",cost:"free",source:"https://skillshop.withgoogle.com/",tags:"google digital marketing ads courses",desc:"Training resources for Google products and digital skills."},
+{id:8,name:"Microsoft Learn",type:"learn",device:"both",level:"Beginner",cost:"free",source:"https://learn.microsoft.com/training/",tags:"microsoft technology coding cloud",desc:"Free Microsoft learning paths covering technology, cloud and development."},
+{id:9,name:"Canva Design School",type:"learn",device:"both",level:"Beginner",cost:"free",source:"https://www.canva.com/designschool/",tags:"design graphics canva",desc:"Design learning resources for beginners and creators."},
+{id:10,name:"Fiverr",type:"freelance",device:"laptop",level:"Basic",cost:"free",source:"https://www.fiverr.com/",tags:"freelancing services online work",desc:"Marketplace for offering freelance services."},
+{id:11,name:"Meta Blueprint",type:"learn",device:"both",level:"Beginner",cost:"free",source:"https://www.facebook.com/business/learn",tags:"facebook instagram marketing meta",desc:"Training resources for digital marketing and Meta business tools."},
+{id:12,name:"Amazon Associates India",type:"freelance",device:"both",level:"Basic",cost:"free",source:"https://affiliate-program.amazon.in/",tags:"affiliate marketing amazon website creator",desc:"Affiliate program for eligible publishers and content creators."}
+];
 
+const resources=[
+{title:"Skill India Digital Hub",url:"https://www.skillindiadigital.gov.in/",text:"Government-backed skill development resources."},
+{title:"SWAYAM",url:"https://swayam.gov.in/",text:"Online courses from Indian institutions."},
+{title:"National Career Service",url:"https://www.ncs.gov.in/",text:"Government employment and career services."},
+{title:"Google Skillshop",url:"https://skillshop.withgoogle.com/",text:"Training resources for Google products and digital skills."},
+{title:"Microsoft Learn",url:"https://learn.microsoft.com/training/",text:"Free technical learning paths."},
+{title:"Amazon Associates India",url:"https://affiliate-program.amazon.in/",text:"Affiliate program information for eligible publishers and creators."}
+];
 
-const opportunities = [
+const te={hero:"నమ్మదగిన ఆన్‌లైన్ సంపాదన మార్గాలను కనుగొనండి.",heroText:"ఉద్యోగాలు, లెర్నింగ్, ఫ్రీలాన్సింగ్ మరియు క్రియేటర్ అవకాశాలను పోల్చండి. EarnMate అధికారిక వనరులు, ప్రాక్టికల్ గైడ్స్ మరియు వాస్తవిక అంచనాలపై దృష్టి పెడుతుంది.",opps:"అవకాశాల డైరెక్టరీ",guides:"ప్రాక్టికల్ సంపాదన గైడ్స్",finder:"మీ ప్రారంభ మార్గాన్ని కనుగొనండి"};
+const hi={hero:"भरोसेमंद ऑनलाइन कमाई के तरीके खोजें.",heroText:"नौकरी, सीखने, फ्रीलांसिंग और क्रिएटर अवसरों की तुलना करें। EarnMate आधिकारिक स्रोतों, व्यावहारिक गाइड और वास्तविक अपेक्षाओं पर ध्यान देता है.",opps:"अवसर डायरेक्टरी",guides:"प्रैक्टिकल कमाई गाइड",finder:"अपना शुरुआती रास्ता खोजें"};
 
-{
-id:1,
-title:"Skill India Digital Hub",
-category:"learn",
-device:"both",
-cost:"free",
-tags:["Free","Skills","Government"],
-description:"Government-backed digital learning and skilling resources.",
-details:"Explore courses and skill-development opportunities through the official Skill India Digital Hub.",
-url:"https://www.skillindiadigital.gov.in/"
-},
+let currentLang="en";
 
-{
-id:2,
-title:"SWAYAM Courses",
-category:"learn",
-device:"both",
-cost:"free",
-tags:["Free","Courses","Education"],
-description:"Online courses from Indian universities and institutions.",
-details:"SWAYAM provides online courses covering many academic and skill subjects.",
-url:"https://swayam.gov.in/"
-},
-
-{
-id:3,
-title:"NPTEL on SWAYAM",
-category:"learn",
-device:"both",
-cost:"free",
-tags:["Free","Technology","Courses"],
-description:"Engineering and technology courses from leading institutes.",
-details:"NPTEL offers online courses in engineering, science, programming and related fields.",
-url:"https://swayam.gov.in/nc_details/NPTEL"
-},
-
-{
-id:4,
-title:"YouTube Creator",
-category:"creator",
-device:"both",
-cost:"free",
-tags:["Creator","Video","Free"],
-description:"Create videos and potentially monetize an audience.",
-details:"Learn about YouTube channel creation, monetization policies and creator tools.",
-url:"https://support.google.com/youtube/"
-},
-
-{
-id:5,
-title:"Upwork Freelancing",
-category:"freelance",
-device:"laptop",
-cost:"free",
-tags:["Freelance","Remote","Skills"],
-description:"Freelance marketplace for professional services.",
-details:"Create a profile and apply for suitable freelance projects. Competition and platform rules apply.",
-url:"https://support.upwork.com/"
-},
-
-{
-id:6,
-title:"National Career Service",
-category:"jobs",
-device:"both",
-cost:"free",
-tags:["Jobs","Government","Free"],
-description:"Government employment and career services.",
-details:"Search employment opportunities, career resources and related services.",
-url:"https://www.ncs.gov.in/"
-},
-
-{
-id:7,
-title:"Google Skillshop",
-category:"learn",
-device:"both",
-cost:"free",
-tags:["Google","Free","Skills"],
-description:"Training for Google products and digital skills.",
-details:"Learn about Google advertising, analytics and other professional tools.",
-url:"https://skillshop.withgoogle.com/"
-},
-
-{
-id:8,
-title:"Microsoft Learn",
-category:"learn",
-device:"both",
-cost:"free",
-tags:["Microsoft","Technology","Free"],
-description:"Free technical and professional learning resources.",
-details:"Explore Microsoft technology training, modules and learning paths.",
-url:"https://learn.microsoft.com/training/"
-},
-
-{
-id:9,
-title:"Canva Design School",
-category:"learn",
-device:"both",
-cost:"free",
-tags:["Design","Creative","Free"],
-description:"Learn graphic design and Canva-related skills.",
-details:"Useful for beginners interested in design, presentations and visual content.",
-url:"https://www.canva.com/designschool/"
-},
-
-{
-id:10,
-title:"Fiverr",
-category:"freelance",
-device:"both",
-cost:"free",
-tags:["Freelance","Services","Online"],
-description:"Marketplace for offering freelance services.",
-details
+function escapeHtml(s){return String(s).replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));}
+function setLanguage(lang){currentLang=lang;try{localStorage.setItem("earnmate_lang",lang)}catch(e){};document.getElementById("lang").value=lang;document.getElementById("heroTitle").textContent=lang==="te"?te.hero:lang==="hi"?hi.hero:"Find legitimate ways to earn online.";document.getElementById("heroText").textContent=lang==="te"?te.heroText:lang==="hi"?hi.heroText:"Compare jobs, learning paths, freelancing and creator opportunities. EarnMate focuses on official sources, practical guides and realistic expectations — not guaranteed-income claims.";render();renderResources();}
+function render(){
+const q=document.getElementById("search").value.toLowerCase(),t=document.getElementById("type").value,d=document.getElementById("device").value,c=document.getElementById("cost").value;
+const arr=data.filter(x=>(t==="all"||x.type===t)&&(d==="all"||x.device===d||x.device==="both")&&(c==="all"||x.cost===c)&&((x.name+" "+x.desc+" "+x.tags).toLowerCase().includes(q)));
+document.getElementById("count").textContent=arr.length+" results";
+document.getElementById("cards").innerHTML=arr.map(x=>`<article class="card"><div><span class="tag">${escapeHtml(x.type.toUpperCase())}</span><h3>${escapeHtml(x.name)}</h3><p>${escapeHtml(x.desc)}</p><div class="meta">Device: ${escapeHtml(x.device)} • Level: ${escapeHtml(x.level)} • ${x.cost==="free"?"₹0 / Free to start":"Fees may apply"}</div></div><div class="actions"><button class="btn secondary small" onclick="details(${x.id})">Details</button><a class="btn primary small" href="${x.source}" target="_blank" rel="noopener noreferrer" onclick="trackOutbound('${escapeHtml(x.name)}')">Official source ↗</a></div></article>`).join("")||'<div class="panel" style="grid-column:1/-1">No matching opportunities found.</div>';
+}
+function renderResources(){document.getElementById("resourceCards").innerHTML=resources.map(x=>`<article class="panel"><span class="pill">Official resource</span><h3>${escapeHtml(x.title)}</h3><p class="muted">${escapeHtml(x.text)}</p><a class="btn secondary small" href="${x.url}" target="_blank" rel="noopener noreferrer" onclick="trackOutbound('${escapeHtml(x.title)}')">Open resource ↗</a></article>`).join("");}
+function details(id){const x=data.find(a=>a.id===id);if(!x)return;document.getElementById("modalBody").innerHTML=`<span class="tag">${escapeHtml(x.type.toUpperCase())}</span><h2>${escapeHtml(x.name)}</h2><p>${escapeHtml(x.desc)}</p><p><b>Device:</b> ${escapeHtml(x.device)}<br><b>Level:</b> ${escapeHtml(x.level)}<br><b>Cost:</b> ${x.cost==="free"?"₹0 / Free to start":"Fees may apply"}</p><div class="notice">Before starting, verify current eligibility, fees, vacancies and terms on the official source.</div><p><a class="btn primary" href="${x.source}" target="_blank" rel="noopener noreferrer" onclick="trackOutbound('${escapeHtml(x.name)}')">Open official source ↗</a></p>`;document.getElementById("modal").style.display="flex";}
+function closeModal(){document.getElementById("modal").style.display="none";}
+function calc(){const h=+document.getElementById("hours").value||0,d=+document.getElementById("days").value||0,r=+document.getElementById("rate").value||0;document.getElementById("total").textContent="₹"+Math.round(h*d*r).toLocaleString("en-IN");}
+function findPath(){const d=document.getElementById("fDevice").value,s=document.getElementById("fSkill").value,b=+document.getElementById("fBudget").value;const arr=data.filter(x=>(d==="any"||x.device===d||x.device==="both")&&(s==="any"||x.level.toLowerCase()===s||(s==="beginner"&&x.level==="Basic"))&&(b>=2000||x.cost==="free"));const top=arr.slice(0,4);const box=document.getElementById("finderResult");box.style.display="block";box.innerHTML=`<h3>${currentLang==="te"?"మీ ప్రారంభ ఎంపికలు":currentLang==="hi"?"आपके शुरुआती विकल्प":"Your starting options"}</h3><p>${top.map(x=>escapeHtml(x.name)).join(", ")||"the full directory"}</p><p class="muted">This is only a discovery suggestion; it is not an earnings guarantee.</p>`;}
+function trackOutbound(name){try{if(window.gtag)window.gtag("event","outbound_click",{event_category:"outbound",event_label:name})}catch(e){}}
+function activateAds(){if(!CONFIG.ADSENSE_CLIENT||!CONFIG.ADSENSE_SLOT)return;const slot=document.getElementById("adSlot");slot.classList.add("active");const s=document.createElement("script");s.async=true;s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+encodeURIComponent(CONFIG.ADSENSE_CLIENT);s.crossOrigin="anonymous";document.head.appendChild(s);slot.innerHTML=`<ins class="adsbygoogle" style="display:block" data-ad-client="${escapeHtml(CONFIG.ADSENSE_CLIENT)}" data-ad-slot="${escapeHtml(CONFIG.ADSENSE_SLOT)}" data-ad-format="auto" data-full-width-responsive="true"></ins>`;setTimeout(()=>{try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}},500);}
+(function(){try{currentLang=localStorage.getItem("earnmate_lang")||"en"}catch(e){}if(!["en","te","hi"].includes(currentLang))currentLang="en";document.getElementById("lang").value=currentLang;setLanguage(currentLang);calc();activateAds();})();
+</script>
+</body>
+</html>
